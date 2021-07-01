@@ -1,0 +1,47 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__list {
+  @extend %justify-content;
+}
+
+.clients__card {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__item {
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+.clients__icon {
+  fill: $icon-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__item {
+  &:hover {
+    .clients__icon {
+      fill: $accent-color;
+    }
+  }
+  &:focus {
+    .clients__icon {
+      fill: $accent-color;
+    }
+  }
+}

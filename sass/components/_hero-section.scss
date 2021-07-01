@@ -1,0 +1,25 @@
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(48, 58, 47, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero__button {
+  @extend %button;
+  font-weight: 700;
+  padding: 10px 32px;
+  &:hover {
+    background-color: #188ce8;
+  }
+  &:focus {
+    background-color: #188ce8;
+  }
+}

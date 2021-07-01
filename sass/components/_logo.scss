@@ -1,0 +1,17 @@
+.logo {
+  color: $logo-color;
+  @extend %logo;
+}
+
+.logo__studio_accent_color {
+  color: $accent-color;
+}
+
+.logo__studio_dark_color {
+  @extend %logo;
+  color: $accent-color;
+}
+
+.footer__logo--end {
+  margin-bottom: 20px;
+}

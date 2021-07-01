@@ -1,0 +1,8 @@
+@mixin center() {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  @include center();
+}

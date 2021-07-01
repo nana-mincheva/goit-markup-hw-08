@@ -1,0 +1,118 @@
+.footer__adress {
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+.footer-contacts__item:visited,
+.footer__logo--end:visited {
+  color: $white-color;
+}
+
+.footer {
+  color: $white-color;
+  background-color: $background-color;
+  padding-top: 69px;
+  padding-bottom: 60px;
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-contacts {
+  .footer-contacts__link {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-contacts__item {
+  color: $white-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-modal {
+  margin-left: 93px;
+  &::placeholder {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.25;
+    @include center();
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-modal__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+.footer-modal__input {
+  background-color: $background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-modal__input:hover,
+.footer-modal__input:focus {
+  border-color: $accent-color;
+}
+
+.footer-modal__button {
+  display: inline-block;
+  color: $white-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  padding: 10px 28px;
+  cursor: pointer;
+  margin-left: 12px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #188ce8;
+  }
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.footer-modal__icon {
+  fill: $white-color;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
