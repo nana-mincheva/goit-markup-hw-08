@@ -118,11 +118,3 @@
 .mobile-media {
   display: flex;
 }
-
-.mobile-media__item::after {
-  display: block;
-  content: "";
-  width: 0;
-  height: 22px;
-  border-color: $title-color;
-}

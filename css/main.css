@@ -537,14 +537,6 @@ body {
   display: flex;
 }
 
-.mobile-media__item::after {
-  display: block;
-  content: "";
-  width: 0;
-  height: 22px;
-  border-color: #212121;
-}
-
 .logo {
   color: #000000;
 }
