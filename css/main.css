@@ -485,7 +485,8 @@ body {
 .site-nav__close {
   position: absolute;
   right: 10px;
-  top: 21px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .mobile-menu__item {
@@ -501,12 +502,21 @@ body {
   color: #212121;
 }
 
+.mobile-menu__link:hover {
+  color: #2196f3;
+}
+
+.mobile-menu__link:focus {
+  color: #2196f3;
+}
+
 .mobile-contacts__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: #2196f3;
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__mail {
@@ -515,6 +525,7 @@ body {
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-bottom: 64px;
 }
 
 .mobile-media__link {
@@ -525,8 +536,10 @@ body {
   color: #2196f3;
 }
 
-.mobile-media__link:not(:last-child) {
-  margin-right: 20px;
+.mobile-media__item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .mobile-media {

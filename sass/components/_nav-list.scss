@@ -68,7 +68,8 @@
 .site-nav__close {
   position: absolute;
   right: 10px;
-  top: 21px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .mobile-menu__item {
@@ -82,6 +83,12 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: $title-color;
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .mobile-contacts__tel {
@@ -90,6 +97,7 @@
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: $accent-color;
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__mail {
@@ -98,6 +106,7 @@
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: $content-color;
+  margin-bottom: 64px;
 }
 
 .mobile-media__link {
@@ -108,8 +117,10 @@
   color: $accent-color;
 }
 
-.mobile-media__link:not(:last-child) {
-  margin-right: 20px;
+.mobile-media__item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .mobile-media {
