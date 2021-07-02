@@ -476,10 +476,10 @@ body {
   position: relative;
   padding-top: 48px;
   padding-bottom: 40px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .site-nav__close {
@@ -529,8 +529,20 @@ body {
   color: #2196f3;
 }
 
+.mobile-media__link:not(:last-child) {
+  margin-right: 20px;
+}
+
 .mobile-media {
   display: flex;
+}
+
+.mobile-media__item::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 22px;
+  border-color: #212121;
 }
 
 .logo {
