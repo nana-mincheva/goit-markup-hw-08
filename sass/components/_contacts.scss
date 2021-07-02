@@ -1,5 +1,6 @@
 .contacts {
   margin-left: auto;
+  display: none;
   .contacts__item {
     &:not(:last-child) {
       margin-right: 50px;

@@ -1,12 +1,35 @@
 .hero__title {
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    color: $white-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .product__title,
@@ -15,10 +38,16 @@
   color: $title-color;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.7;
+  font-size: 28px;
+  line-height: 1.178px;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__title {
@@ -37,6 +66,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .team__name {

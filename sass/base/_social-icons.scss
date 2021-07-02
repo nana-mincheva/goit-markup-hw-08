@@ -1,6 +1,7 @@
 .social__list {
   margin: 0 auto;
-  @extend %justify-content;
+  display: flex;
+  justify-content: center;
 }
 
 .social__item {

@@ -4,12 +4,42 @@
       rgba(48, 58, 47, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-background.jpg");
+    url("..//..//images/hero-background-mob.png");
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(48, 58, 47, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("..//..//images/hero-background-tabl.png");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(48, 58, 47, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-background.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
 }
 
 .hero__button {

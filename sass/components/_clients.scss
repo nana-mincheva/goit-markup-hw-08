@@ -4,7 +4,8 @@
 }
 
 .clients__list {
-  @extend %justify-content;
+  display: flex;
+  justify-content: center;
 }
 
 .clients__card {

@@ -3,6 +3,14 @@
   @extend %logo;
 }
 
+.header {
+  .logo {
+    color: $logo-color;
+    @extend %logo;
+    padding: 16px 0;
+  }
+}
+
 .logo__studio_accent_color {
   color: $accent-color;
 }

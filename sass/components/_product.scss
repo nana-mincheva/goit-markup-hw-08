@@ -1,8 +1,13 @@
 .product {
   padding: 94px 0;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .product__list {
-  @extend %justify-content;
+  display: flex;
+  justify-content: center;
 }
 
 .product__item {
