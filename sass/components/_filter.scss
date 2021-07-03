@@ -1,16 +1,38 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 30px) / 3);
   margin-top: -30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px) / 3);
+  }
 }
 
 .filter__item {
-  width: 370px;
-  margin-top: 30px;
-  cursor: pointer;
-  &:not(:nth-last-child(3n + 1)) {
-    margin-right: 30px;
+  width: 100%;
+
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    &:not(:nth-last-child(2n + 1)) {
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      text-align: center;
+      &:not(:nth-last-child(3n + 1)) {
+        margin-right: 30px;
+      }
+    }
   }
 }
 
