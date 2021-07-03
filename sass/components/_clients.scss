@@ -1,11 +1,17 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .clients__list {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .clients__card {
@@ -14,6 +20,12 @@
   cursor: pointer;
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
 }
 
