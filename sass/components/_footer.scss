@@ -11,14 +11,23 @@
 .footer {
   color: $white-color;
   background-color: $background-color;
-  // padding-top: 69px;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  // .container {
-  //   // display: flex;
-  //   // align-items: baseline;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-top: 69px;
+  }
+  .container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
 }
 
 .footer-container {
@@ -28,10 +37,11 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: -60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: -60px;
+    justify-content: space-around;
   }
 }
 
@@ -61,7 +71,7 @@
 .footer-modal {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 
   &::placeholder {
     display: flex;
@@ -71,10 +81,14 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
+
 .footer-modal__title {
   font-weight: bold;
   font-size: 14px;
@@ -87,6 +101,14 @@
 
 .footer-modal__form {
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .footer-modal__input {
@@ -96,14 +118,21 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  // width: 358px;
   width: 100%;
   height: 50px;
   outline: none;
   padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: -20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 
@@ -119,8 +148,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  // align-items: center;
-  // text-align: center;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
@@ -128,7 +155,6 @@
   min-width: 200px;
   padding: 10px 28px;
   cursor: pointer;
-  // margin-left: 12px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -137,6 +163,12 @@
   }
   &:focus {
     background-color: #188ce8;
+
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      text-align: center;
+      margin-left: 12px;
+    }
   }
 }
 
