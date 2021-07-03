@@ -41,7 +41,18 @@
 }
 
 .footer-icon {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: -60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: -60px;
+    margin-left: 70px;
+  }
 }
 
 .footer-icon__title,
