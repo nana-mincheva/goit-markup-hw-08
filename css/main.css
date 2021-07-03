@@ -599,7 +599,7 @@ body {
   .contacts {
     display: flex;
     flex-direction: row;
-    margin-top: 11px;
+    align-items: baseline;
   }
   .contacts .contacts__item:not(:last-child) {
     margin-right: 50px;
@@ -1341,6 +1341,7 @@ body {
 
 .filter__item {
   width: 100%;
+  min-height: 440px;
   margin-top: 40px;
 }
 
@@ -1351,8 +1352,8 @@ body {
     cursor: pointer;
     margin-bottom: 20px;
   }
-  .filter__item:not(:nth-last-child(2n + 1)) {
-    margin-left: 30px;
+  .filter__item:not(:nth-child(2n)) {
+    margin-right: 30px;
   }
 }
 
@@ -1360,6 +1361,9 @@ body {
   .filter__item {
     width: 370px;
     text-align: center;
+  }
+  .filter__item:not(:nth-child(2n)) {
+    margin-right: -30px;
   }
   .filter__item:not(:nth-last-child(3n + 1)) {
     margin-right: 30px;
