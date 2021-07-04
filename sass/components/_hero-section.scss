@@ -1,10 +1,11 @@
 .hero {
+  // width: 768px;
   background-image: linear-gradient(
       to right,
       rgba(48, 58, 47, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("..//..//images/hero-background-mob.png");
+    url("../../images/header-mob.jpg");
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -18,13 +19,15 @@
         rgba(48, 58, 47, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("..//..//images/hero-background-tabl.png");
+      url("../../images/header-tabl.jpg");
     height: 400px;
+    width: 768px;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
+    margin: auto;
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
@@ -34,6 +37,7 @@
       ),
       url("../images/hero-background.jpg");
     height: 600px;
+    width: 1200px;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 200px;

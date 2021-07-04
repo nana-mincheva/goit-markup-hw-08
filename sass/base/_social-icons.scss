@@ -40,6 +40,12 @@
   }
 }
 
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-icon {
   margin-bottom: 60px;
   display: flex;
@@ -50,7 +56,6 @@
     margin-bottom: -60px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: -60px;
     margin-left: 70px;
   }
 }
