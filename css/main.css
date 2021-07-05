@@ -1367,6 +1367,7 @@ body {
 @media screen and (min-width: 1200px) {
   .filter {
     flex-basis: calc((100% - 30px) / 3);
+    margin-left: -30px;
   }
 }
 
@@ -1384,7 +1385,13 @@ body {
     margin-top: 30px;
     cursor: pointer;
   }
-  .filter__item:not(:nth-child(2n)) {
+  .filter__item:not(:nth-child(2n + 1)) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .filter__item {
     margin-right: 30px;
   }
 }
@@ -1393,12 +1400,7 @@ body {
   .filter__item {
     width: 370px;
     text-align: center;
-  }
-  .filter__item:not(:nth-child(2n)) {
-    margin-right: -30px;
-  }
-  .filter__item:not(:nth-last-child(3n + 1)) {
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
