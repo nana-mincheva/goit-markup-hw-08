@@ -39,9 +39,13 @@
   text-align: center;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.178px;
+  line-height: 1.178;
   letter-spacing: 0.03em;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
@@ -89,6 +93,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .portfolio__title {

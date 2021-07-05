@@ -11,7 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-top: -55px;
+    margin-top: -30px;
   }
   .feature__text {
     font-size: 14px;
@@ -23,13 +23,11 @@
 .feature__item {
   width: 100%;
   min-height: 101px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
-    margin-top: 55px;
+    margin-top: 30px;
   }
 
   @media screen and (min-width: 1200px) {

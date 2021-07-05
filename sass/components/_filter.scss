@@ -17,6 +17,8 @@
   width: 100%;
   min-height: 404px;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -52,6 +54,12 @@
   border-bottom: 1px solid $filter-desc-color;
   border-left: 1px solid $filter-desc-color;
   border-right: 1px solid $filter-desc-color;
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(2) {
+      flex-grow: 1;
+    }
+  }
 }
 
 .filter__image {
@@ -79,6 +87,8 @@
 }
 
 .filter__card {
+  display: flex;
+  flex-direction: column;
   &:hover {
     .card__description {
       opacity: 1;
