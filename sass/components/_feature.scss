@@ -24,7 +24,7 @@
   width: 100%;
   min-height: 101px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
