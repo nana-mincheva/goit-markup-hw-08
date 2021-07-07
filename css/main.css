@@ -894,6 +894,12 @@ body {
   min-height: 101px;
 }
 
+@media screen and (max-width: 768px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .feature__item {
     flex-basis: calc((100% - 60px) / 2);

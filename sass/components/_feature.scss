@@ -24,6 +24,12 @@
   width: 100%;
   min-height: 101px;
 
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
